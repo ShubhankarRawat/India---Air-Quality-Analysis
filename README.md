@@ -1,4 +1,4 @@
-![alt text](https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwi9q82VysPiAhVO8HMBHUajCvsQjRx6BAgBEAU&url=https%3A%2F%2Fwww.indiawest.com%2Fletters_to_editor%2Ftraveling-to-india-protect-yourself-from-air-pollution%2Farticle_628e1afc-c363-11e8-8373-1f5930f4b483.html&psig=AOvVaw0_FCmeYHODFEqtkaEaHYBD&ust=1559316804651578)
+![alt text](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiZ_fLCysPiAhXH4HMBHZ7BBYkQjRx6BAgBEAU&url=%2Furl%3Fsa%3Di%26source%3Dimages%26cd%3D%26ved%3D%26url%3Dhttps%253A%252F%252Fwww.indiawest.com%252Fletters_to_editor%252Ftraveling-to-india-protect-yourself-from-air-pollution%252Farticle_628e1afc-c363-11e8-8373-1f5930f4b483.html%26psig%3DAOvVaw0_FCmeYHODFEqtkaEaHYBD%26ust%3D1559316804651578&psig=AOvVaw0_FCmeYHODFEqtkaEaHYBD&ust=1559316804651578)
 
 India has made it to the headlines when it comes to air pollution. The growing air pollution in the country has been one of the major concerns for both the government and the citizens.
 
