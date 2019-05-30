@@ -1,4 +1,6 @@
-![alt text](https://github.com/ShubhankarRawat/India---Air-Quality-Analysis/blob/master/pollution.jpg)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/ShubhankarRawat/India---Air-Quality-Analysis/blob/master/pollution.jpg">
+</p>
 
 India has made it to the headlines when it comes to air pollution. The growing air pollution in the country has been one of the major concerns for both the government and the citizens.
 
