@@ -11,6 +11,9 @@ Most of the population is not even aware of the colossal harm caused by the air 
 
 Being a data science and analysis enthusiast I decided to analyze the Indian air quality data to find something meaningful and to make people aware by the facts and figures.
 
+I have explained the approach in this article : https://medium.com/@shubhankarrawatsam.1999/india-air-pollution-data-analysis-bd7dbfe93841
+
+For a better understanding of how the code is implemented please refer to the above link.
 
 ABOUT THE DATA
 
