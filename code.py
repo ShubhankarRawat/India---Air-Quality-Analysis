@@ -24,17 +24,17 @@ df = df.dropna(axis = 0, subset = ['location'])
 #deleting all null values in so2 attribute
 df = df.dropna(axis = 0, subset = ['so2'])
 
+df.isnull().sum()
+
 #not interested in agency
 del df['agency']
-
 del df['location_monitoring_station']
-
 del df['stn_code']
-
 del df['sampling_date']
 
+#dataset after deleting the above columns
+df.head()
 
-    
 # 298 locations, 34 states
 
 #changing type to only 3 categories
@@ -91,6 +91,8 @@ df['year'] = df['date'].dt.year # year
 df['year'] = df['year'].fillna(0.0).astype(int)
 df = df[(df['year']>0)]
 
+df.head()
+
 # Heatmap Pivot with State as Row, Year as Col, No2 as Value
 f, ax = plt.subplots(figsize = (10,10))
 ax.set_title('{} by state and year'.format('so2'))
@@ -106,7 +108,47 @@ ax.set_title('{} by state and year'.format('no2'))
 sns.heatmap(df.pivot_table('no2', index='state',
                 columns=['year'],aggfunc='median',margins=True),
                 annot = True, cmap = "YlGnBu", linewidths = 1, ax = ax,cbar_kws = {'label': 'Annual Average'})
-    
+
     
 
 
+# bar plot of no2 vs location - desc order - first 50
+df[['no2', 'location']].groupby(['location']).median().sort_values("no2", ascending = False).head(50).plot.bar(color = 'g')
+
+# bar plot of no2 vs location - desc order - last 50
+df[['no2', 'location']].groupby(['location']).median().sort_values("no2", ascending = False).tail(50).plot.bar(color = 'g')
+
+# bar plot of so2 vs location - desc order
+df[['so2', 'location']].groupby(['location']).median().sort_values("so2", ascending = False).head(50).plot.bar(color = 'y')
+
+# bar plot of no2 vs location - desc order
+df[['so2', 'location']].groupby(['location']).median().sort_values("so2", ascending = False).tail(50).plot.bar(color = 'y')
+
+# rspm = PM10 - location wise - first 50
+df[['rspm', 'location']].groupby(['location']).median().sort_values("rspm", ascending = False).head(50).plot.bar(color = 'r')
+
+# rspm = PM10 - location wise - last 50
+df[['rspm', 'location']].groupby(['location']).median().sort_values("rspm", ascending = False).tail(50).plot.bar(color = 'r')
+
+# spm = PM10 - location wise - first 50
+df[['spm', 'location']].groupby(['location']).median().sort_values("spm", ascending = False).head(50).plot.bar(color = 'r')
+
+# pm2_5 vs location - all non null values
+df[['pm2_5', 'location']].groupby(['location']).median().sort_values("pm2_5", ascending = False).head(64).plot.bar(color = 'r')
+
+
+# heatmap of rspm
+f, ax = plt.subplots(figsize = (10,10))
+ax.set_title('{} by state and year'.format('rspm'))
+sns.heatmap(df.pivot_table('rspm', index='state',
+                columns = ['year'], aggfunc = 'median', margins = True),
+                annot = True, cmap = "YlGnBu", linewidths = 1, ax = ax, cbar_kws = {'label': 'Annual Average'})
+
+    
+
+# heatmap of spm
+f, ax = plt.subplots(figsize = (10, 10))
+ax.set_title('{} by state and year'.format('spm'))
+sns.heatmap(df.pivot_table('spm', index ='state',
+                columns = ['year'], aggfunc = 'median', margins = True)
+                , cmap = "YlGnBu", linewidths = 0.5, ax = ax, cbar_kws = {'label': 'Annual Average'})
