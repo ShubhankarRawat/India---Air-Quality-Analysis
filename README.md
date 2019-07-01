@@ -15,7 +15,7 @@ I have explained the approach in this article : https://medium.com/@shubhankarra
 
 For a better understanding of how the code is implemented please refer to the above link.
 
-ABOUT THE DATA
+## THE DATA
 
 The dataset contains the following features :
 
